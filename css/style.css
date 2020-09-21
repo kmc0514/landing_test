@@ -1,0 +1,186 @@
+@import "./base.css";
+@import "./basis.css";
+@import "./font.css";
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: "NanumSquare", "Dotum", "돋움", "Apple SD Gothic Neo", sans-serif;
+}
+
+#body_pc {
+  display: block;
+  background-image: url("../images/pc_cover.png");
+}
+
+.header__mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #c2c2c2;
+  z-index: 1;
+}
+
+/* 모바일 Header */
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.header__logo {
+  height: 24px;
+}
+
+.header__logo img {
+  width: auto;
+  height: 100%;
+}
+
+.header__btn {
+  background-color: black;
+  padding: 8px 16px 8px 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+/* 메인 커버 */
+.main__cover {
+  background-color: #ff6f62;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.main__cover__title {
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  padding-top: 146px;
+  text-align: center;
+}
+
+.main__cover__bg {
+  position: absolute;
+  top: 228px;
+  width: 173px;
+  height: auto;
+}
+
+.main__cover__bg img {
+  width: 100%;
+  opacity: 0.15;
+}
+
+.main__cover__img {
+  margin-top: 168px;
+  margin-right: 24px;
+  margin-left: 24px;
+  border-radius: 28px 28px 0 0;
+}
+
+.main__cover__btn__wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 45px;
+}
+
+.main__cover__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  height: 64px;
+  box-shadow: 8px 8px 12px 2px rgba(0, 0, 0, 0.16);
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+.main__cover__btn__text {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.main__cover__btn__arrow {
+  width: 24px;
+  height: 24px;
+}
+
+/* 메인 정보 */
+.main__info {
+  padding: 82px 24px 82px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main__info:nth-child(2),
+:nth-child(4) {
+  background-color: #f8f5f5;
+}
+
+.main__info__title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.main__info__text {
+  margin-bottom: 48px;
+}
+
+.main__info__img {
+  margin: 0 24px 0 24px;
+}
+
+.main__info__img img {
+  border-radius: 28px;
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.main__info__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.step04__contents__img img {
+  width: 144px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+/* 푸터 */
+.footer__wrap {
+  display: block;
+  background-color: #f8f5f5;
+  padding: 16px 24px 24px 24px;
+  border-top: 1px solid #c2c2c2;
+}
+
+.footer__wrap span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.footer__link li a {
+  font-size: 14px;
+}
